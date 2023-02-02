@@ -1,7 +1,7 @@
 import { Card, CardBody, Link, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { LeaderboardTable } from "src/components/LeaderboardTable";
-import { LeaderboardTimeFrame } from "src/types/Leaderboard";
+import { LeaderboardTimeFrame } from "src/types/RankingBoardModels";
 
 export function LeaderboardWidget() {
   return (

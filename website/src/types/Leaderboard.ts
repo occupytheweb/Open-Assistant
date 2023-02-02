@@ -1,30 +1,7 @@
-export interface LeaderboardEntry {
-  display_name: string;
-  ranking: number;
-  score: number;
-}
+import { RankingAttributeDetails, RankingBoardResponse } from "./RankingBoardModels";
 
-export const enum LeaderboardTimeFrame {
-  day = "day",
-  week = "week",
-  month = "month",
-  total = "total",
-}
-export interface LeaderboardReply {
-  time_frame: LeaderboardTimeFrame;
-  last_updated: string; // date time iso string
-  leaderboard: LeaderboardEntity[];
-}
-
-export interface LeaderboardEntity {
-  rank: number;
-  user_id: string;
-  username: string;
-  auth_method: string;
-  display_name: string;
+export type LeaderboardEntity = RankingAttributeDetails<{
   leader_score: number;
-  base_date: string;
-  modified_date: string;
   prompts: number;
   replies_assistant: number;
   replies_prompter: number;
@@ -40,4 +17,6 @@ export interface LeaderboardEntity {
   reply_ranked_3: number;
   streak_last_day_date: number | null;
   streak_days: number | null;
-}
+}>;
+
+export type LeaderboardReply = RankingBoardResponse<"leaderboard", LeaderboardEntity>;

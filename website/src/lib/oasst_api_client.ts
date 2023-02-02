@@ -1,5 +1,6 @@
 import type { EmojiOp, Message } from "src/types/Conversation";
-import { LeaderboardReply, LeaderboardTimeFrame } from "src/types/Leaderboard";
+import { LeaderboardReply } from "src/types/Leaderboard";
+import { LeaderboardTimeFrame } from "src/types/RankingBoardModels";
 import type { AvailableTasks } from "src/types/Task";
 import type { BackendUser, BackendUserCore, FetchUsersParams, FetchUsersResponse } from "src/types/Users";
 

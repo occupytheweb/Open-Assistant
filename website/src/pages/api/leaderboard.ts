@@ -1,6 +1,6 @@
 import { withoutRole } from "src/lib/auth";
 import { createApiClient } from "src/lib/oasst_client_factory";
-import { LeaderboardTimeFrame } from "src/types/Leaderboard";
+import { LeaderboardTimeFrame } from "src/types/RankingBoardModels";
 
 /**
  * Returns the set of valid labels that can be applied to messages.

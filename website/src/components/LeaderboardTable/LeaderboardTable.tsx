@@ -3,7 +3,8 @@ import { createColumnHelper } from "@tanstack/react-table";
 import { useTranslation } from "next-i18next";
 import React, { useMemo, useState } from "react";
 import { get } from "src/lib/api";
-import { LeaderboardEntity, LeaderboardReply, LeaderboardTimeFrame } from "src/types/Leaderboard";
+import { LeaderboardEntity, LeaderboardReply } from "src/types/Leaderboard";
+import { LeaderboardTimeFrame } from "src/types/RankingBoardModels";
 import useSWRImmutable from "swr/immutable";
 
 import { DataTable } from "../DataTable";

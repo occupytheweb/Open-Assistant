@@ -4,7 +4,7 @@ import { useTranslation } from "next-i18next";
 import { getDashboardLayout } from "src/components/Layout";
 export { getDefaultStaticProps as getStaticProps } from "src/lib/default_static_props";
 import { LeaderboardTable } from "src/components/LeaderboardTable";
-import { LeaderboardTimeFrame } from "src/types/Leaderboard";
+import { LeaderboardTimeFrame } from "src/types/RankingBoardModels";
 
 const Leaderboard = () => {
   const { t } = useTranslation(["leaderboard", "common"]);
